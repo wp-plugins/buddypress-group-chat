@@ -178,7 +178,6 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 			$tinychat_display = true;
 
-			//$random = Rand (1,999999999999);
 			$name = apply_filters( 'bp_get_group_name', $bp->groups->current_group->name );
 			$name = preg_replace('/\s+/','',$name);
 			$name=htmlspecialchars($name);
