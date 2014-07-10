@@ -6,7 +6,7 @@
 * Author URI: http://profiles.wordpress.org/ruddernation
 * Description: This plugin is used for BuddyPress to all Group creators to allow the use of TinyChat in groups,
 * The Chat also include youtube/soundcloud for all users, Even if you're a moderator or not.
-* Version: 1.4
+* Version: 1.0.5
 * Requires at least: WordPress 3.6.0, BuddyPress 1.8.1
 * Tested up to: WordPress 3.9.1 / BuddyPress 2.0.1
 * Site Wide Only: true
@@ -24,16 +24,13 @@ function bp_tinychat_group_chat_init() {
 
 add_action( 'bp_init', 'bp_tinychat_group_chat_init' );
 
-
 function bp_tinychat_group_chat_activate() {
 
 	global $wpdb;
 
-
 	if ( !empty($wpdb->charset) )
 
 		$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
-
 
 	$sql[] = "CREATE TABLE {$wpdb->base_prefix}bp_tinychat_group_chat (
 
@@ -47,7 +44,6 @@ function bp_tinychat_group_chat_activate() {
 
 		 	   ) {$charset_collate};";
 
-
 	$sql[] = "CREATE TABLE {$wpdb->base_prefix}bp_tinychat_group_chat_online (
 
 		  		id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -60,13 +56,9 @@ function bp_tinychat_group_chat_activate() {
 
 		 	   ) {$charset_collate};";
 
-
 	require_once( ABSPATH . 'wp-admin/upgrade-functions.php' );
 
-
 	dbDelta($sql);
-
-
 
 	update_site_option( 'bp-tinychat-group-chat-db-version', BP_TINYCHAT_GROUP_CHAT_DB_VERSION );
 

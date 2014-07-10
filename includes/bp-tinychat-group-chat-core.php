@@ -2,9 +2,9 @@
 
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.0.5' );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.0.5' );
 
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 
@@ -62,9 +62,7 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 			return false;
 
-		wp_nonce_field( 'groups_create_save_' . $this->slug );
-
-		?>
+		wp_nonce_field( 'groups_create_save_' . $this->slug ); ?>
 
 <input type="checkbox" name="bp_tinychat_group_chat_enabled" id="bp_tinychat_group_chat_enabled" value="1"  
 
@@ -178,18 +176,15 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 			$tinychat_display = true;
 
-			$name = apply_filters( 'bp_get_group_name', $bp->groups->current_group->name );
-			$name = preg_replace('/\s+/','',$name);
+			$name=apply_filters( 'bp_get_group_name', $bp->groups->current_group->name );
+			$name=preg_replace('/\s+/','',$name);
 			$name=htmlspecialchars($name);
 			$name=strtolower($name);
 			?>
 
 			<div id="item-body">
 
-<style>
-#chat{height:98%;width:100%;left:0px; right:0px; bottom:0px; position:absolute;
-}</style>
-
+<style>#chat{height:98%;width:100%;left:0px; right:0px; bottom:0px; position:absolute;}</style>
 <div id="chat">
 <script src="https://www.ruddernation.com/info/js/slag.js"></script>
 
@@ -199,8 +194,7 @@ var embed;
 embed = tinychat({room: "<?php echo $name?>", langdefault: "en", desktop: "true", youtube: "all"});
 
 	</script>
-
-	<div id='client'></div></div>
+<div id='client'></div></div>
 
             <?php
 

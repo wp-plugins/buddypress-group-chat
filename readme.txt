@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: group chat, buddypress group chat,video chat, Tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: WordPress 3.6.0, BuddyPress 1.8.1
 Tested up to: WordPress 3.9.1 / BuddyPress 2.0.1
-Stable tag: 1.4
+Stable tag: 1.0.5
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -48,28 +48,31 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 
 == Upgrade Notice ==
 
-= 1.1 =
+= 1.0.1 =
 * Had to include extra css code to get the chat to display correctly without over flowing on the screen no matter what size screen you have.
 
-= 1.3 =
+= 1.0.3 =
 * Full overhaul of the code to make it load quicker and act smoother.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * first version.
 
-= 1.1 =
+= 1.0.1 =
 * updated the embed code and css code.
 
-= 1.2 =
+= 1.0.2 =
 * Removed the random numbers as this was creating different rooms for all users meaning no 1 would be in the same room.
 
-= 1.3 =
+= 1.0.3 =
 * General maintenance.
 
-= 1.4 =
+= 1.0.4 =
 * Removal of white space and updated the core components.
+
+= 1.0.5 =
+* Update of core components.
 
 == Social Sites ==
 * Google+ - https://plus.google.com/115608989177049799241/about
