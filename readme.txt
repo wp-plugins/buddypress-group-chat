@@ -1,11 +1,11 @@
-=== tinychat-group-chat===
+=== buddypress-group-chat===
 
 Contributors: ruddernation
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FFAC7FBEBH6JE
 Tags: group chat, buddypress group chat,video chat, Tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
 Tested up to: 3.9.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -73,6 +73,9 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 
 = 1.0.5 =
 * Update of core components.
+
+= 1.0.6 =
+* Renamed to buddypress-group-chat for easy searching of the plugin.
 
 == Social Sites ==
 * Google+ - https://plus.google.com/115608989177049799241/about
