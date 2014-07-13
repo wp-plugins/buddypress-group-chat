@@ -4,8 +4,8 @@ Contributors: ruddernation
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FFAC7FBEBH6JE
 Tags: group chat, buddypress group chat,video chat, Tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
-Tested up to: 3.9.1
-Stable tag: 1.0.6
+Tested up to: 4.0
+Stable tag: 1.1.6
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl.html
 
