@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: group chat, buddypress group chat,video chat, Tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
 Tested up to: 4.0
-Stable tag: 1.0.7
+Stable tag: 1.0.7.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,9 +13,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 This plugin is used for BuddyPress to add TinyChat to Groups, 
 Group creators can enable this in the admin section,
-This also has full screen option, Just click for full screen,
-This is a free plugin and will remain to be free,
-This also allows all users to play YouTube videos.
+This is instant fullscreen and has YouTube/SoundCloud enabled, 
+This also has Smileys enabled using my JavaScript file as TinyChat have now disabled them by default.
 
 
 == Installation ==
