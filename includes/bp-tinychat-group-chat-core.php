@@ -1,48 +1,48 @@
 <?php
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
+define ( 'BP_BUDDYPRESS_GROUP_CHAT_IS_INSTALLED', 1 );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.0.7.1' );
+define ( 'BP_BUDDYPRESS_GROUP_CHAT_VERSION', '1.0.8' );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.0.7.1' );
+define ( 'BP_BUDDYPRESS_GROUP_CHAT_DB_VERSION', '1.0.8' );
 
-if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
+if ( !defined( 'BP_BUDDYPRESS_GROUP_CHAT_SLUG' ) )
 
-	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
+	define ( 'BP_BUDDYPRESS_GROUP_CHAT_SLUG', 'Group Chat' );
 
-function bp_tinychat_group_chat_setup_globals() {
+function bp_buddypress_group_chat_setup_globals() {
 
 	global $bp, $wpdb;
 
-	$bp->tinychat->id = 'tinychat group chat';
+	$bp->buddypress->id = 'buddypress group chat';
 
-	$bp->tinychat->table_name = $wpdb->base_prefix . 'bp_tinychat_group_chat';
+	$bp->buddypress->table_name = $wpdb->base_prefix . 'bp_buddypress_group_chat';
 
-	$bp->tinychat->format_notification_function = 'bp_tinychat_group_chat_format_notifications';
+	$bp->buddypress->format_notification_function = 'bp_buddypress_group_chat_format_notifications';
 
-	$bp->tinychat->slug = BP_TINYCHAT_GROUP_CHAT_SLUG;
+	$bp->buddypress->slug = BP_BUDDYPRESS_GROUP_CHAT_SLUG;
 
-	$bp->active_components[$bp->tinychat->slug] = $bp->tinychat->id;
+	$bp->active_components[$bp->buddypress->slug] = $bp->buddypress->id;
 
 }
 
-add_action( 'bp_setup_globals', 'bp_tinychat_group_chat_setup_globals' );
+add_action( 'bp_setup_globals', 'bp_buddypress_group_chat_setup_globals' );
 
-class BP_tinychat_group_chat extends BP_Group_Extension {	
+class BP_buddypress_group_chat extends BP_Group_Extension {	
 
-	function bp_tinychat_group_chat() {
+	function bp_buddypress_group_chat() {
 
 		global $bp;
 
 		$this->name = 'Group Chat';
 
-		$this->slug = 'tinychat-group-chat';
+		$this->slug = 'buddypress-group-chat';
 
-		$this->create_step_position = 18;
+		$this->create_step_position = 19;
 
-		$this->nav_item_position = 33;
+		$this->nav_item_position = 36;
 
-		if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled' ) == '1' ) {
+		if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_buddypress_group_chat_enabled' ) == '1' ) {
 
 			$this->enable_nav_item = true;
 
@@ -64,12 +64,12 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		wp_nonce_field( 'groups_create_save_' . $this->slug ); ?>
 
-<input type="checkbox" name="bp_tinychat_group_chat_enabled" id="bp_tinychat_group_chat_enabled" value="1"  
+<input type="checkbox" name="bp_buddypress_group_chat_enabled" id="bp_buddypress_group_chat_enabled" value="1"  
 
 			<?php 
 
 
-			if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled' ) == '1' ) {
+			if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_buddypress_group_chat_enabled' ) == '1' ) {
 
 
 				echo 'checked=1';
@@ -94,9 +94,9 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		check_admin_referer( 'groups_create_save_' . $this->slug );	
 
-		if ( $_POST['bp_tinychat_group_chat_enabled'] == 1 ) {
+		if ( $_POST['bp_buddypress_group_chat_enabled'] == 1 ) {
 
-			groups_update_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled', 1 );
+			groups_update_groupmeta( $bp->groups->current_group->id, 'bp_buddypress_group_chat_enabled', 1 );
 
 		}
 
@@ -120,11 +120,11 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		?>
 
-		<input type="checkbox" name="bp_tinychat_group_chat_enabled" id="bp_tinychat_group_chat_enabled" value="1"  
+		<input type="checkbox" name="bp_buddypress_group_chat_enabled" id="bp_buddypress_group_chat_enabled" value="1"  
 
 			<?php 
 
-			if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled' ) == '1' ) {
+			if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_buddypress_group_chat_enabled' ) == '1' ) {
 
 				echo 'checked=1';
 
@@ -153,13 +153,13 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		check_admin_referer( 'groups_edit_save_' . $this->slug );
 
-		if ( $_POST['bp_tinychat_group_chat_enabled'] == 1 ) {
+		if ( $_POST['bp_buddypress_group_chat_enabled'] == 1 ) {
 
-			groups_update_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled', 1 );
+			groups_update_groupmeta( $bp->groups->current_group->id, 'bp_buddypress_group_chat_enabled', 1 );
 
 		} else {
 
-			groups_update_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled', 0 );
+			groups_update_groupmeta( $bp->groups->current_group->id, 'bp_buddypress_group_chat_enabled', 0 );
 		}
 
 		bp_core_add_message( __( 'Settings saved successfully', 'buddypress' ) );
@@ -174,7 +174,7 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		if ( groups_is_user_member( $bp->loggedin_user->id, $bp->groups->current_group->id ) || groups_is_user_mod( $bp->loggedin_user->id, $bp->groups->current_group->id ) || groups_is_user_admin( $bp->loggedin_user->id, $bp->groups->current_group->id ) || is_super_admin() ) {
 
-			$tinychat_display = true;
+			$buddypress_display = true;
 
 			$name=apply_filters( 'bp_get_group_name', $bp->groups->current_group->name );
 			$name=preg_replace('/\s+/','',$name);
@@ -210,4 +210,4 @@ embed = tinychat({room: "<?php echo $name?>", langdefault: "en", desktop: "true"
 
 }
 
-bp_register_group_extension( 'BP_tinychat_group_chat' ); ?>
+bp_register_group_extension( 'BP_buddypress_group_chat' ); ?>
