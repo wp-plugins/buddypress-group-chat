@@ -1,7 +1,7 @@
 <?php
 /*
 * Plugin Name: buddypress-group-chat
-* Plugin URI: https://www.ruddernation.com/downloads/wordpress-plugins/tinychat-group-chat
+* Plugin URI: https://wordpress.org/plugins/buddypress-group-chat/
 * Author: Ruddernation Designs
 * Author URI: http://profiles.wordpress.org/ruddernation
 * Description: This plugin is used for BuddyPress to all Group creators to allow the use of TinyChat in groups,
