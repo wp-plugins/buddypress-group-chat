@@ -36,7 +36,7 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		$this->name = 'Group Chat';
 
-		$this->slug = 'tinychat-group-chat';
+		$this->slug = 'group-chat';
 
 		$this->create_step_position = 18;
 
