@@ -2,7 +2,7 @@
 
 Contributors: ruddernation
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FFAC7FBEBH6JE
-Tags: group chat, buddypress group chat,video chat, Tinychat, chat,buddypress chat,buddypress video chat
+Tags: group chat, buddypress group chat,video chat, tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
 Tested up to: 4.0
 Stable tag: 1.1.8
