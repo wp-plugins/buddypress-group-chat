@@ -24,12 +24,12 @@ This also has Smileys enabled using my JavaScript file as TinyChat have now disa
 
 == Screenshots ==
 
-* https://www.ruddernation.com/downloads/wordpress-plugins/buddypress-group-chat/screenshot-1.jpg
-* https://www.ruddernation.com/downloads/wordpress-plugins/buddypress-group-chat/screenshot-2.jpg
-* https://www.ruddernation.com/downloads/wordpress-plugins/buddypress-group-chat/screenshot-3.jpg
-* https://www.ruddernation.com/downloads/wordpress-plugins/buddypress-group-chat/screenshot-4.jpg
-* https://www.ruddernation.com/downloads/wordpress-plugins/buddypress-group-chat/screenshot-5.jpg
-* https://www.ruddernation.com/downloads/wordpress-plugins/buddypress-group-chat/screenshot-6.jpg
+* To use just enter Groups and create a new group and follow the steps or use one already and go to settings.
+* Make sure there is a tick in the box to enable the chat then save.
+* You'll be notified that it's saved.
+* Once enabled it'll then show the "Group Chat" link in your chosen group(s).
+* This is the TinyChat load screen, If you don't see this then check that you have "Adobe Flash Player installed" (Info is on FAQ). 
+* Once it's loaded then just enter your username, Just use "Guest" as the Facebook/Twitter are associated with the TinyChat domain only.
 
 == Notes ==
 
@@ -43,7 +43,7 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 * A. No, You have to be logged in and you have to be a member of the group.
 
 * Q. The chat is not loading for me.
-* A. Check to see if you have the Adobe flash player installed (http://get.adobe.com/flashplayer) and JavaScript enabled in your browser.
+* A. Check to see if you have the Adobe flash player installed ( http://helpx.adobe.com/flash-player.html ) and JavaScript enabled in your browser.
 
 == Upgrade Notice ==
 
