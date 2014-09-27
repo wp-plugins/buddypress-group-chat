@@ -174,8 +174,6 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 
 		if ( groups_is_user_member( $bp->loggedin_user->id, $bp->groups->current_group->id ) || groups_is_user_mod( $bp->loggedin_user->id, $bp->groups->current_group->id ) || groups_is_user_admin( $bp->loggedin_user->id, $bp->groups->current_group->id ) || is_super_admin() ) {
 
-			$tinychat_display = true;
-
 			$name=apply_filters( 'bp_get_group_name', $bp->groups->current_group->name );
 			$name=preg_replace('/\s+/','',$name);
 			$name=htmlspecialchars($name,ENT_QUOTES, 'UTF-8');
