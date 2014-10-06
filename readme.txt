@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: group chat, buddypress group chat,video chat, tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
 Tested up to: 4.0
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -89,7 +89,9 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 = 1.1.7 = 
 * Added this update to hopefully fix a old issue with version 1.1.6.
 
+= 1.2.1 =
+* Update to the main JavaScript file, You will need to refresh the page if it doesn't load straight away.
+
 == Social Sites ==
-* Twitter - https://twitter.com/RUDD3RN4T10N
 * Facebook - https://www.facebook.com/ruddernationdotcom
 * Github - https://github.com/ruddernation
