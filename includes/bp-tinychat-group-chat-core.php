@@ -2,9 +2,9 @@
 
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.2.2' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.2.3' );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.2.2' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.2.3' );
 
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 
@@ -185,7 +185,7 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 <script src="https://www.ruddernation.com/info/js/slagmodified.js"></script>
 	<script type='text/javascript'>
 var embed;
-embed = tinychat({room: "<?php echo $name?>"});
+embed = tinychat({room: "<?php echo htmlspecialchars($_SERVER['SERVER_NAME'],ENT_QUOTES, 'UTF-8') ?>_<?php echo $name?>"});
 	</script>
 <div id='Ruddernation'></div></div>
             <?php
