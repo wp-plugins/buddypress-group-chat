@@ -2,9 +2,9 @@
 
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.2.3' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.2.4' );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.2.3' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.2.4' );
 
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 
