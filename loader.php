@@ -10,12 +10,11 @@
 * Requires at least: WordPress 3.6.0, BuddyPress 1.8.1
 * Tested up to: WordPress 4.0, BuddyPress 2.0.1
 * Site Wide Only: true
-* Date: 10th October 2014
+* Date: 11th October 2014
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 * Important - Only load if BuddyPress Groups is activated! 
 */
-
 function bp_tinychat_group_chat_init() {
 
 	require( dirname( __FILE__ ) . '/includes/bp-tinychat-group-chat-core.php' );
