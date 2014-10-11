@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: group chat, buddypress group chat,video chat, tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
 Tested up to: 4.0
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -33,7 +33,7 @@ This also has Smileys enabled using my JavaScript file as TinyChat have now disa
 
 == Notes ==
 
-The room names take the name of group, So you could go to Tinychat and add the group name for chat with ads 
+The room name is now domain/groupname
 or go to http://www.ruddernation.net/*Group Name*
 Example: http://www.mydomain.com/groups/groupname/ This will output the room name to *Group Name*.
 
@@ -43,16 +43,7 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 * A. No, You have to be logged in and you have to be a member of the group.
 
 * Q. The chat is not loading for me.
-* A. Check to see if you have the Adobe flash player installed ( http://helpx.adobe.com/flash-player.html ) and JavaScript enabled in your browser.
-
-== Upgrade Notice ==
-
-= 1.0.1 =
-* Had to include extra css code to get the chat to display correctly without over flowing on the screen no matter what size screen you have.
-
-= 1.0.3 =
-* Full overhaul of the code to make it load quicker and act smoother.
-
+* A. Check to see if you have the Adobe flash player installed (http://helpx.adobe.com/flash-player.html) and JavaScript enabled in your browser.
 
 == Changelog ==
 
@@ -93,8 +84,10 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 * Update to the main JavaScript file, You will need to refresh the page if it doesn't load straight away.
 
 = 1.2.3 =
-* Updated to make the room name include the domain as some people were having issues with rooms already being full on TinyChat, so now it will be domain/group_name.
+* Updated to make the room name include the domain as some people were having issues with rooms already being full on TinyChat, so now it will be domain/groupname.
 
 == Social Sites ==
 * Facebook - https://www.facebook.com/ruddernationdotcom
 * Github - https://github.com/ruddernation
+* WordPress - https://profiles.wordpress.org/ruddernation
+* Twitter - https://twitter.com/R_N_Designs
