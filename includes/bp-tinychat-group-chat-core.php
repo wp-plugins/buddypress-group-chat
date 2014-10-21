@@ -2,9 +2,9 @@
 
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.2.5' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.2.6' );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.2.5' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.2.6' );
 
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 
@@ -182,10 +182,10 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 			<div id="item-body">
 <style>#chat{height:98%;width:100%;left:0px; right:0px; bottom:0px; position:absolute;}</style>
 <div id="chat">
-<script src="https://www.ruddernation.com/info/js/slagmodified.js"></script>
-	<script type='text/javascript'>
+<script  data-cfasync="false" src="https://www.ruddernation.com/info/js/slagmodified.js"></script>
+	<script  data-cfasync="false" type='text/javascript'>
 var embed;
-embed = tinychat({room: "<?php echo htmlspecialchars($_SERVER['SERVER_NAME'],ENT_QUOTES, 'UTF-8') ?>_<?php echo $name?>"});
+embed = tinychat({room: "<?php echo $name?>"});
 	</script>
 <div id='Ruddernation'></div></div>
             <?php
