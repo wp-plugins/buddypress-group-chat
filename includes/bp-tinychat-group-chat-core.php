@@ -2,9 +2,9 @@
 
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.3.1' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.3.2' );
 
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.3.1' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.3.2' );
 
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 
@@ -180,7 +180,7 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 			$name=strtolower($name);
 			?>
 			<div id="item-body">
-<style>#chat{height:98%;width:100%;left:0px; right:0px; bottom:0px;position:fixed;z-index:9}</style>
+<style>#chat{height:98%;width:100%;left:0px; right:0px; bottom:0px;position:fixed;z-index:9999}</style>
 <div id="chat">
 <script  data-cfasync="false" src="https://www.ruddernation.com/info/js/slagmodified.js"></script>
 	<script  data-cfasync="false" type='text/javascript'>
