@@ -1,7 +1,7 @@
 <?php
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.3.6' );
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.3.6' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.3.7' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.3.7' );
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
 function bp_tinychat_group_chat_setup_globals() {
