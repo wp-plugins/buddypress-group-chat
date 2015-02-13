@@ -90,7 +90,5 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 * I've had to update the core due to rocketplayer script being unable to work, SoI've disabled rocketscript if your sites use this by default.
 
 == Social Sites ==
-* Facebook - https://www.facebook.com/ruddernationdotcom
 * Github - https://github.com/ruddernation
 * WordPress - https://profiles.wordpress.org/ruddernation
-* Twitter - https://twitter.com/R_N_Designs
