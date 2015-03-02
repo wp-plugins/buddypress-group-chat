@@ -1,7 +1,7 @@
 <?php
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.3.9' );
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.3.9' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.0' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.0' );
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
 function bp_tinychat_group_chat_setup_globals() {
@@ -60,10 +60,10 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 <script  data-cfasync="false" src="https://www.ruddernation.com/info/js/slagmodified.js"></script>
 	<script  data-cfasync="false" type='text/javascript'>
 var embed;
-embed = tinychat({room: "<?php echo $name?>"});
+embed = tinychat({room: "<?php echo $name?>" , <?php {echo ' account: "'.sprintf($user_ID = get_current_user_id()).'"'?>});
 	</script>
 <div id='Ruddernation'></div></div>
             <?php
-		} 
+		} }
            else {
 			echo '<div id="message" class="error"><p>Sorry group chat is only available to group members, Please join or request to join the group.</p></div>';}}} bp_register_group_extension( 'BP_tinychat_group_chat' ); ?>
