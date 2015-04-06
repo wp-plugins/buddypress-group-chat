@@ -1,7 +1,7 @@
 <?php
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.2' );
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.2' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.3' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.3' );
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
 function bp_tinychat_group_chat_setup_globals() {
@@ -55,12 +55,12 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 		global $bp;
 		if ( groups_is_user_member( $bp->loggedin_user->id, $bp->groups->current_group->id ) || groups_is_user_mod( $bp->loggedin_user->id, $bp->groups->current_group->id ) || groups_is_user_admin( $bp->loggedin_user->id, $bp->groups->current_group->id ) || is_super_admin() ) {$name=apply_filters( 'bp_get_group_name', $bp->groups->current_group->name );$name=preg_replace('/\s+/','',$name);$name=htmlspecialchars($name,ENT_QUOTES, 'UTF-8');$name=strtolower($name);?>
 			<div id="item-body">
-<style>#chat{height:98%;width:100%;left:0px; right:0px; bottom:0px;position:fixed;z-index:9999}</style>
+<style>#chat{height:98%;width:100%;left:0px;right:0px;bottom:0px;position:fixed;z-index:9999}</style>
 <div id="chat">
 <script  data-cfasync="false" src="https://www.ruddernation.info/info/js/slagmodified.js"></script>
 	<script  data-cfasync="false" type='text/javascript'>
 var embed;
-embed = tinychat({room: "<?php echo $name?>" , <?php {echo ' account: "'.sprintf($user_ID = get_current_user_id()).'"'?>});
+embed = tinychat({room: "<?php echo $name?>",<?php {echo ' account:"'.$bp->loggedin_user->fullname.'"'?>,<?php echo 'nick:"'.$bp->loggedin_user->fullname.'"'; ?>});
 	</script>
 <div id='Ruddernation'></div></div>
             <?php
