@@ -8,7 +8,7 @@
 * The Chat also includes youtube/soundcloud for all users, Even if you're not a moderator.
 * Version: 1.4.4
 * Requires at least: WordPress 3.6.0, BuddyPress 1.8.1
-* Tested up to: WordPress 4.1, BuddyPress 2.2.2
+* Tested up to: WordPress 4.1.1, BuddyPress 2.2.2
 * Site Wide Only: true
 * Date: 11th April 2015
 * License: GPLv3
