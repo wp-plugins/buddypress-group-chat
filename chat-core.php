@@ -1,9 +1,9 @@
 <?php
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.5' );
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.5' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.6' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.6' );
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
-	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Video Chat' );
+	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
 function bp_tinychat_group_chat_setup_globals() {
 	global $bp, $wpdb;$bp->tinychat->id = 'tinychat group chat';$bp->tinychat->table_name = $wpdb->base_prefix . 'bp_tinychat_group_chat';$bp->tinychat->format_notification_function = 'bp_tinychat_group_chat_format_notifications';$bp->tinychat->slug = BP_TINYCHAT_GROUP_CHAT_SLUG;$bp->active_components[$bp->tinychat->slug] = $bp->tinychat->id;}
 add_action( 'bp_setup_globals', 'bp_tinychat_group_chat_setup_globals' );
@@ -60,7 +60,7 @@ class BP_tinychat_group_chat extends BP_Group_Extension {
 <script  data-cfasync="false" src="https://www.ruddernation.info/info/js/slagmodified.js"></script>
 	<script  data-cfasync="false" type='text/javascript'>
 var embed;
-embed = tinychat({room: "<?php echo $name?>",<?php {echo ' account:"'.$bp->loggedin_user->fullname.'"'?>,<?php echo 'nick:"'.$bp->loggedin_user->fullname.'"'; ?>});
+embed = tinychat({room: "<?php echo $name?>",<?php {echo ' account:"'.$bp->loggedin_user->fullname.'"'?>,<?php echo 'nick:"'.$bp->loggedin_user->fullname.'"'; ?>,urlsuper:"<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>"});
 	</script>
 <div id='Ruddernation'></div></div>
             <?php
