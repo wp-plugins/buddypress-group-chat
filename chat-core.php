@@ -1,9 +1,9 @@
 <?php
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.4' );
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.4' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.5' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.5' );
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
-	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
+	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Video Chat' );
 function bp_tinychat_group_chat_setup_globals() {
 	global $bp, $wpdb;$bp->tinychat->id = 'tinychat group chat';$bp->tinychat->table_name = $wpdb->base_prefix . 'bp_tinychat_group_chat';$bp->tinychat->format_notification_function = 'bp_tinychat_group_chat_format_notifications';$bp->tinychat->slug = BP_TINYCHAT_GROUP_CHAT_SLUG;$bp->active_components[$bp->tinychat->slug] = $bp->tinychat->id;}
 add_action( 'bp_setup_globals', 'bp_tinychat_group_chat_setup_globals' );
