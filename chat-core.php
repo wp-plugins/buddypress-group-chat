@@ -1,7 +1,7 @@
 <?php
 define ( 'BP_TINYCHAT_GROUP_CHAT_IS_INSTALLED', 1 );
-define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.8' );
-define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.8' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_VERSION', '1.4.8.1' );
+define ( 'BP_TINYCHAT_GROUP_CHAT_DB_VERSION', '1.4.8.1' );
 if ( !defined( 'BP_TINYCHAT_GROUP_CHAT_SLUG' ) )
 	define ( 'BP_TINYCHAT_GROUP_CHAT_SLUG', 'Group Chat' );
 function bp_tinychat_group_chat_setup_globals() {
@@ -9,11 +9,13 @@ function bp_tinychat_group_chat_setup_globals() {
 add_action( 'bp_setup_globals', 'bp_tinychat_group_chat_setup_globals' );
 class BP_tinychat_group_chat extends BP_Group_Extension {	
 	function bp_tinychat_group_chat() {
-		global $bp;$this->name = 'Group Chat';$this->slug = 'group-chat';$this->create_step_position = 18;$this->nav_item_position = 33;
+		global $bp;$this->name = 'Group Chat';$this->slug = 'group-chat';$this->create_step_position = 48;$this->nav_item_position = 83;
 		if ( groups_get_groupmeta( $bp->groups->current_group->id, 'bp_tinychat_group_chat_enabled' ) == '1' ) {
 			$this->enable_nav_item = true;
 		} else {
-			$this->enable_nav_item = false;}}function create_screen() {
+			$this->enable_nav_item = false;}
+			}
+			function create_screen() {
 		global $bp;
 		if ( !bp_is_group_creation_step( $this->slug ) )
 			return false;
