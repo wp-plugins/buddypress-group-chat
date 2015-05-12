@@ -99,7 +99,7 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 * When you click the share button in chat it will now grab the URL of the page you are on so you can paste to your social networks.
 
 = 1.4.9 = 
-* Major update, This is to fix the errors associated with BP_Group_Extension an group ID errors, It now checks if sit is multisite and minor other fixes, Thank you to Jookkoo ( https://wordpress.org/support/profile/jookkoo )  for pointing this out.
+* Major update, This is to fix the errors associated with BP_Group_Extension an group ID errors, It now checks if site is multisite and minor other fixes, Thank you to Jookkoo ( https://wordpress.org/support/profile/jookkoo )  for pointing this out.
 
 
 == Social Sites ==
