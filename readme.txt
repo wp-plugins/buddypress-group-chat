@@ -1,11 +1,11 @@
-=== Buddypress Group Chat===
+=== Buddypress Group Chat - No longer updated on Wordpress!===
 
 Contributors: ruddernation
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FFAC7FBEBH6JE
 Tags: group chat, buddypress group chat,video chat, tinychat, chat,buddypress chat,buddypress video chat
 Requires at least: 3.6.0
 Tested up to: 4.2
-Stable tag: 1.4.9.3
+Stable tag: 1.5.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -101,19 +101,12 @@ Example: http://www.mydomain.com/groups/groupname/ This will output the room nam
 = 1.4.9 = 
 * Major update, This is to fix the errors associated with BP_Group_Extension an group ID errors, It now checks if site is multisite and minor other fixes, Thank you to Jookkoo ( https://wordpress.org/support/profile/jookkoo )  for pointing this out.
 
+= 1.5.0 =
+* Last version, now closed, use older versions for compatibility. New version/author will be registered soon.
+
 
 == Social Sites ==
 
 * Website - https://www.ruddernation.com
 
 * Room Spy - https://www.tinychat-spy.com
-
-* Facebook - https://www.facebook.com/rndtc
-
-* Twitter - https://twitter.com/R_N_Designs
-
-* Github - https://github.com/ruddernation
-
-* WordPress - https://profiles.wordpress.org/ruddernation
-
-* Skype - ruddernation.designs
