@@ -116,7 +116,7 @@ This now shows the Google reCaptcha that TinyChat use, You may need to click on 
 
 * Facebook - https://www.facebook.com/rndtc
 
-* Twitter - https://twitter.com/R_N_Designs
+* Twitter - https://twitter.com/Rudder_Designs
 
 * Github - https://github.com/ruddernation
 
